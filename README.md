@@ -13,7 +13,7 @@ and the Flutter guide for
 
 A Flutter package with a conveniently designed common constants for Flutter projects.
 
-At the moment inludes 4 types of constants:
+At the moment includes 4 types of constants:
 1. Border
 2. Duration
 3. Padding

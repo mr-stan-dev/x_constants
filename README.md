@@ -30,7 +30,6 @@ In the `pubspec.yaml` of your flutter project, add the following dependency:
 
 ```yaml
 dependencies:
-  ...
   x_constants: ^0.0.1
 ```
 

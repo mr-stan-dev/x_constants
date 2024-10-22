@@ -11,29 +11,62 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+A Flutter package with a conveniently designed common constants for Flutter projects.
+
+At the moment inludes 4 types of constants:
+1. Border
+2. Duration
+3. Padding
+4. Spacing
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+![x_const](https://github.com/user-attachments/assets/3e259799-885e-40e7-982d-21767663c3db)
+
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+In the `pubspec.yaml` of your flutter project, add the following dependency:
+
+```yaml
+dependencies:
+  ...
+  x_constants: ^0.0.1
+```
+
+Import it:
+
+```dart
+import 'package:x_constants/x_constants.dart';
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
 ```dart
-const like = 'sample';
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Container(
+          decoration: const BoxDecoration(
+            borderRadius: XBorder.all16,
+            color: Colors.yellow,
+          ),
+          child: const Padding(
+            padding: XPadding.all16,
+            child: Text('Text 1'),
+          ),
+        ),
+        XSpacing.vertical16,
+        const Padding(
+          padding: XPadding.all16,
+          child: Text('Text 2'),
+        ),
+      ],
+    );
+  }
 ```
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+Feel free to raise a PR, but make sure that new constants are commonly used.

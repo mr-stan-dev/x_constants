@@ -1,0 +1,11 @@
+name: x_constants
+description: "A Flutter package with a conveniently designed common constants for Flutter projects"
+version: 0.0.1
+homepage: https://github.com/mr-stan-dev/x_constants
+
+environment:
+  sdk: '>=2.12.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
